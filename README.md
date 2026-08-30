@@ -8,9 +8,8 @@ a full document) rather than following a fixed retrieval pipeline. Why: see
 [`docs/decisions.md`](docs/decisions.md).
 
 Note: this project originally followed a different, fully deterministic architecture
-described in [`SPEC.md`](SPEC.md); it has since moved to the agentic design described
-here, which `docs/decisions.md` explains. `SPEC.md` is kept for history but no longer
-reflects the current system.
+spec; it has since moved to the agentic design described here, which
+`docs/decisions.md` explains.
 
 ## What's built
 

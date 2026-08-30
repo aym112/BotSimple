@@ -1,8 +1,7 @@
 # AymanChat — implementation decisions
 
-This project pivoted away from SPEC.md's deterministic-first architecture to a real LLM
-agent with tools. This document reflects the current, actual system — not SPEC.md, which
-now describes an earlier design the project deliberately moved on from.
+This project pivoted away from an earlier deterministic-first architecture spec to a real
+LLM agent with tools. This document reflects the current, actual system.
 
 ## Why an agent instead of a deterministic pipeline
 
