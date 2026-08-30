@@ -1,0 +1,318 @@
+{
+  "corpus_name": "PolicyLens synthetic insurance corpus",
+  "version": "1.0",
+  "documents": [
+    {
+      "doc_id": "DOC-H-0042-PC",
+      "filename": "01_POL-2026-0042_Health_Particular_Conditions.pdf",
+      "doc_type": "particular_conditions",
+      "policy_id": "POL-2026-0042",
+      "effective_date": "2026-01-01",
+      "sha256": "3ad9d4d74887f11a374b293d634cdc00366a7c631856f36eca7b2c357052241c",
+      "relations": [
+        "DOC-H-0042-GC",
+        "DOC-H-0042-END1"
+      ],
+      "designed_test_cases": [
+        "effective_date_value",
+        "initial_dental_limit",
+        "table_row_retrieval"
+      ]
+    },
+    {
+      "doc_id": "DOC-H-0042-GC",
+      "filename": "02_POL-2026-0042_Health_General_Conditions.pdf",
+      "doc_type": "general_conditions",
+      "policy_id": "POL-2026-0042",
+      "effective_date": "2026-01-01",
+      "sha256": "f0a1f3f20bfdde12831a78d47f8694ee13315d6a7ebbbc51d0b0c3fbc8dbaaa9",
+      "relations": [
+        "DOC-H-0042-PC",
+        "DOC-H-0042-END1"
+      ],
+      "designed_test_cases": [
+        "effective_date_definition_distractor",
+        "semantic_similarity_distractor",
+        "not_found_osteopathy"
+      ]
+    },
+    {
+      "doc_id": "DOC-H-0042-END1",
+      "filename": "03_POL-2026-0042_Health_Endorsement_01.pdf",
+      "doc_type": "endorsement",
+      "policy_id": "POL-2026-0042",
+      "effective_date": "2026-06-01",
+      "sha256": "0292fe2c4bda6e908c9fb3756c57be2dc4d3f8c94597d6a679542076194e6c9a",
+      "relations": [
+        "DOC-H-0042-PC",
+        "DOC-H-0042-GC"
+      ],
+      "designed_test_cases": [
+        "amendment_precedence",
+        "conflicting_values_1200_1500"
+      ]
+    },
+    {
+      "doc_id": "DOC-M-0188-PC",
+      "filename": "04_POL-2026-0188_Motor_Particular_Conditions.pdf",
+      "doc_type": "particular_conditions",
+      "policy_id": "POL-2026-0188",
+      "effective_date": "2026-02-15",
+      "sha256": "cd82ed52619fa8af5db573e6eaf536ec2f87b42505b07ca0fba861d284fd0b8b",
+      "relations": [
+        "DOC-M-0188-GC"
+      ],
+      "designed_test_cases": [
+        "table_row_retrieval",
+        "cross_document_rule_lookup"
+      ]
+    },
+    {
+      "doc_id": "DOC-M-0188-GC",
+      "filename": "05_POL-2026-0188_Motor_General_Conditions.pdf",
+      "doc_type": "general_conditions",
+      "policy_id": "POL-2026-0188",
+      "effective_date": "2026-02-15",
+      "sha256": "dfcb6eb97a3c5696a552ba2dd1834edb63b605798c0211c42e26984af06196d5",
+      "relations": [
+        "DOC-M-0188-PC"
+      ],
+      "designed_test_cases": [
+        "cross_reference_section_5_to_6_3",
+        "visible_laptop_exclusion"
+      ]
+    },
+    {
+      "doc_id": "DOC-HOME-0291-PC",
+      "filename": "06_POL-2026-0291_Home_Particular_Conditions.pdf",
+      "doc_type": "particular_conditions",
+      "policy_id": "POL-2026-0291",
+      "effective_date": "2026-03-01",
+      "sha256": "e3e34a4633e030f4ecd1267c00fed2c320a5d07d015eeec377ec42926cdd2a0f",
+      "relations": [
+        "DOC-HOME-0291-GC",
+        "DOC-HOME-0291-END2"
+      ],
+      "designed_test_cases": [
+        "initial_water_deductible",
+        "cross_document_section_hint"
+      ]
+    },
+    {
+      "doc_id": "DOC-HOME-0291-GC",
+      "filename": "07_POL-2026-0291_Home_General_Conditions.pdf",
+      "doc_type": "general_conditions",
+      "policy_id": "POL-2026-0291",
+      "effective_date": "2026-03-01",
+      "sha256": "73ea8363be88ee37fe48e80fa09dc898e775e7e2722585233704c03f2109b954",
+      "relations": [
+        "DOC-HOME-0291-PC",
+        "DOC-HOME-0291-END2"
+      ],
+      "designed_test_cases": [
+        "negligence_nuance",
+        "water_definition_distractor"
+      ]
+    },
+    {
+      "doc_id": "DOC-HOME-0291-END2",
+      "filename": "08_POL-2026-0291_Home_Endorsement_02.pdf",
+      "doc_type": "endorsement",
+      "policy_id": "POL-2026-0291",
+      "effective_date": "2026-07-01",
+      "sha256": "0f5c0787c999dabf028fc716e911308295978a3f36a99549bbde84ce79617df4",
+      "relations": [
+        "DOC-HOME-0291-PC",
+        "DOC-HOME-0291-GC"
+      ],
+      "designed_test_cases": [
+        "amendment_precedence",
+        "conflicting_values_750_500"
+      ]
+    },
+    {
+      "doc_id": "DOC-L-0137-PC",
+      "filename": "09_LIFE-2026-0137_LifeInvest_Particular_Conditions.pdf",
+      "doc_type": "particular_conditions",
+      "policy_id": "LIFE-2026-0137",
+      "effective_date": "2026-01-10",
+      "sha256": "a7405933e3bb961a12e34d56b03fa7a3b4a2517729a4afa17f4a47138cf2dbf9",
+      "relations": [
+        "DOC-L-0137-GC",
+        "DOC-L-0137-FA"
+      ],
+      "designed_test_cases": [
+        "cross_document_fund_annex"
+      ]
+    },
+    {
+      "doc_id": "DOC-L-0137-GC",
+      "filename": "10_LIFE-2026-0137_LifeInvest_General_Conditions.pdf",
+      "doc_type": "general_conditions",
+      "policy_id": "LIFE-2026-0137",
+      "effective_date": "2026-01-10",
+      "sha256": "b564ef7b82c544d3950a9b132f0b47955a69fc748fb7044cb5bb3fc29566e7b4",
+      "relations": [
+        "DOC-L-0137-PC",
+        "DOC-L-0137-FA"
+      ],
+      "designed_test_cases": [
+        "management_fee_definition_distractor",
+        "isin_routing_explanation"
+      ]
+    },
+    {
+      "doc_id": "DOC-L-0137-FA",
+      "filename": "11_LIFE-2026-0137_Fund_Annex.pdf",
+      "doc_type": "fund_annex",
+      "policy_id": "LIFE-2026-0137",
+      "effective_date": "2026-01-10",
+      "sha256": "50c264ae435e3776e12762a936edc404ac26089f69e97350e871441b1727185f",
+      "relations": [
+        "DOC-L-0137-PC",
+        "DOC-L-0137-GC"
+      ],
+      "designed_test_cases": [
+        "exact_isin_filter",
+        "large_table_row_retrieval",
+        "semantic_fund_name_distractors"
+      ]
+    },
+    {
+      "doc_id": "DOC-GLOSSARY",
+      "filename": "12_Nova_Product_Glossary_and_FAQ.pdf",
+      "doc_type": "product_glossary",
+      "policy_id": null,
+      "effective_date": null,
+      "sha256": "c7161b2c975a92247791d18b9b04717d8638486a0de2108bef8c6f99240413c0",
+      "relations": [],
+      "designed_test_cases": [
+        "global_semantic_distractor",
+        "must_not_override_contract"
+      ]
+    }
+  ],
+  "gold_scenarios": [
+    {
+      "id": "Q01",
+      "question": "For policy POL-2026-0042, what is the current annual dental care limit?",
+      "expected": "EUR 1,500 per policy year",
+      "primary_evidence": "DOC-H-0042-END1",
+      "secondary_evidence": "DOC-H-0042-PC",
+      "behavior": [
+        "identifier_filter",
+        "version_precedence",
+        "two_source_explanation"
+      ]
+    },
+    {
+      "id": "Q02",
+      "question": "What is the effective date of policy POL-2026-0042?",
+      "expected": "01 January 2026",
+      "primary_evidence": "DOC-H-0042-PC",
+      "distractor": "DOC-H-0042-GC definition of effective date",
+      "behavior": [
+        "identifier_filter",
+        "avoid_definition_distractor"
+      ]
+    },
+    {
+      "id": "Q03",
+      "question": "For POL-2026-0042, what is the dental deductible?",
+      "expected": "EUR 100",
+      "primary_evidence": "DOC-H-0042-PC",
+      "behavior": [
+        "table_row_retrieval"
+      ]
+    },
+    {
+      "id": "Q04",
+      "question": "Does POL-2026-0042 cover osteopathy?",
+      "expected": "Not found in the available contract documents",
+      "primary_evidence": null,
+      "behavior": [
+        "abstain",
+        "not_found"
+      ]
+    },
+    {
+      "id": "Q05",
+      "question": "For POL-2026-0188, is a laptop stolen from the passenger seat of a locked unattended car covered?",
+      "expected": "No, if it was visible from outside; section 6.3 excludes it",
+      "primary_evidence": "DOC-M-0188-GC",
+      "behavior": [
+        "cross_reference",
+        "eligibility_rule"
+      ]
+    },
+    {
+      "id": "Q06",
+      "question": "What is the personal belongings limit for POL-2026-0188?",
+      "expected": "EUR 1,000 per event",
+      "primary_evidence": "DOC-M-0188-PC",
+      "behavior": [
+        "table_row_retrieval"
+      ]
+    },
+    {
+      "id": "Q07",
+      "question": "For POL-2026-0291, what is the current water damage deductible?",
+      "expected": "EUR 500",
+      "primary_evidence": "DOC-HOME-0291-END2",
+      "secondary_evidence": "DOC-HOME-0291-PC",
+      "behavior": [
+        "version_precedence"
+      ]
+    },
+    {
+      "id": "Q08",
+      "question": "Does ordinary negligence automatically exclude water damage under POL-2026-0291?",
+      "expected": "No. The repeated-leak exclusion requires prior knowledge of a recurring leak and failure to act.",
+      "primary_evidence": "DOC-HOME-0291-GC",
+      "behavior": [
+        "nuanced_text_answer",
+        "support_verification"
+      ]
+    },
+    {
+      "id": "Q09",
+      "question": "What is the management fee for ISIN LU1234567896?",
+      "expected": "1.20% per year",
+      "primary_evidence": "DOC-L-0137-FA",
+      "behavior": [
+        "isin_exact_filter",
+        "dense_should_be_skipped",
+        "table_row_retrieval"
+      ]
+    },
+    {
+      "id": "Q10",
+      "question": "What is the management fee for ISIN LU1616161615?",
+      "expected": "1.55% per year",
+      "primary_evidence": "DOC-L-0137-FA",
+      "behavior": [
+        "isin_exact_filter",
+        "table_row_retrieval"
+      ]
+    },
+    {
+      "id": "Q11",
+      "question": "How many free online fund switches per calendar year are included in LIFE-2026-0137?",
+      "expected": "6",
+      "primary_evidence": "DOC-L-0137-PC",
+      "behavior": [
+        "cross_document_scope"
+      ]
+    },
+    {
+      "id": "Q12",
+      "question": "What is the management fee of Nova Global Infrastructure?",
+      "expected": "1.15% per year",
+      "primary_evidence": "DOC-L-0137-FA",
+      "behavior": [
+        "lexical_plus_dense",
+        "fund_name_disambiguation"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: policylens
+      POSTGRES_PASSWORD: policylens
+      POSTGRES_DB: policylens
+    ports:
+      - "5433:5432"
+    volumes:
+      - policylens_pgdata:/var/lib/postgresql/data
+      - ./backend/scripts/init-test-db.sql:/docker-entrypoint-initdb.d/init-test-db.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U policylens -d policylens"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  policylens_pgdata:
